@@ -1,0 +1,870 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Define Custom Font Face */
+@font-face {
+    font-family: 'Miama';
+    src: url('../resource/font/Miama.ttf') format('truetype');
+}
+
+/* Common Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    /* border: 1px solid red; */
+}
+
+body{
+    /* border: 2px dashed green; */
+}
+
+/* background color */
+.hero {
+    background: linear-gradient(56deg, rgb(17, 17, 17), rgb(255 255 255 / 4%) 100%);
+    height: 105vh;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Body Styles */
+body {
+    font-family: 'inter', sans-serif;
+    background-color: #f5f5f5;
+
+}
+
+.container {
+    background-color: black;
+}
+
+/* navbar */
+
+.navbar,
+.hero-container,
+.habit-container,
+.running-container,
+.training {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 4.25rem;
+    color: #E6533C;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.menu {
+    border-radius: 1.375rem;
+    border: 2px solid rgb(255 255 255 / 35%);
+    color: #f5f5f5;
+}
+
+.menu ul {
+    display: flex;
+    gap: 6.125rem !important;
+    list-style: none;
+    padding: 0.1rem 0.1rem;
+}
+
+.menu ul li {
+    font-size: 1.125rem !important;
+    padding: 0.5rem 0.9rem;
+    border-radius: 1.375rem;
+}
+
+.menu ul span li {
+    background-color: #E6533C;
+    font-weight: 600;
+}
+
+.hidden-menu {
+    display: none;
+}
+
+/* hero area */
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+    top: -1rem;
+}
+
+/* hc left */
+
+.hc-left {
+    margin-top: 10rem;
+}
+
+.hc-left h1 {
+    font-size: 4.875rem;
+    font-weight: 900;
+
+    line-height: 1.02;
+}
+
+.hc-left h1 span {
+    font-family: 'Miama';
+}
+
+.hc-left p {
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    margin-top: 1.78rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.buttons {
+    display: flex;
+    gap: 0.87rem;
+    margin-top: 2.175rem;
+}
+
+.btn-left {
+    background-color: #E6533C;
+    border-radius: 2rem;
+    padding: 0.375rem 2rem;
+}
+
+.btn-left p {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: white;
+    margin-top: 0.3rem;
+}
+
+.btn-right {
+    border-radius: 2rem;
+    padding: 0.375rem 2rem;
+    border: 2px solid white;
+}
+
+.btn-right p {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: white;
+    margin-top: 0.2rem;
+}
+
+/* hc right */
+
+.hc-right {
+    position: relative;
+    right: 4vw;
+}
+
+.hc-right img {
+    width: 28rem;
+    height: 35rem;
+}
+
+.rt-card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    background: rgb(222 220 220 / 23%);
+    position: absolute;
+    top: 23%;
+    right: -6%;
+    padding: 1.125rem 1.67rem;
+}
+
+.rt-card h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+
+}
+
+.rt-card p {
+    color: rgb(255 255 255 / 65%);
+}
+
+/* hc left */
+
+.rb-card-container span {
+
+    position: absolute;
+    font-size: 2.3rem;
+    top: 48%;
+    right: 103%;
+}
+
+.rb-card {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    backdrop-filter: blur(12px);
+    background: rgb(202 202 202 / 13%);
+    position: absolute;
+    top: 71%;
+    right: 73%;
+    padding: 0.8rem 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    text-wrap: nowrap;
+}
+
+.box-left {
+    background-color: #E6533C;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+.rbc-text h1 {
+    font-size: 2rem;
+    font-weight: 900;
+
+}
+
+.rbc-text p {
+    color: rgb(255 255 255 / 65%);
+}
+
+/* ======habit area start====== */
+
+.habit-container {
+    margin-top: 4vh;
+}
+
+.h-top h1 {
+    font-size: 3rem;
+    font-weight: 900;
+
+    text-align: center;
+}
+
+.h-top span p {
+    margin-top: 2vh;
+    text-align: center;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.h-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.5vh;
+    gap: 1rem;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+    padding: 0.3rem;
+    text-align: center;
+}
+
+.card-1 h3,
+.card-2 h3,
+.card-3 h3,
+.card-4 h3 {
+
+    font-size: 1.25rem;
+    margin-top: 3vh;
+}
+
+.card-1 p,
+.card-2 p,
+.card-3 p,
+.card-4 p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    margin-top: 2vh;
+}
+
+.card-1 img,
+.card-2 img,
+.card-3 img,
+.card-4 img {
+    border-radius: 50%;
+    border: 0.25rem solid rgba(255, 255, 255, 0.5);
+    margin-top: 3vh;
+}
+
+/* ======habit area end====== */
+
+/* ======running area start====== */
+.running-container {
+    background-color: #222222;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6rem;
+    padding: 1rem 0rem;
+}
+
+.r-left {
+    width: 50%;
+}
+
+/* left */
+
+.rl-text h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-left: 4.4vw;
+    margin-top: 2vh;
+}
+
+.rl-text p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    margin: 1.6rem 4.6rem;
+}
+
+.btn-join {
+    background-color: #E6533C;
+    width: 14rem;
+    height: 3.125rem;
+    border-radius: 3rem;
+    margin: 2.125rem 4.5rem;
+}
+
+.btn-join p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    object-position: center;
+    line-height: 1.97;
+}
+
+/* right */
+.r-right {
+    width: 50%;
+}
+
+.r-right img {
+    width: 34.875rem;
+    height: 19.5rem;
+    object-fit: cover;
+    border-radius: 3rem;
+    margin-left: -1.6%;
+}
+
+/* ======running area end====== */
+
+/* ====== training area start ====== */
+.training {
+    margin-top: 6rem;
+}
+
+.t-text h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.t-text p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.t-collage {
+    width: 75.96rem;
+    height: 25.12rem;
+    margin-top: 3.625rem;
+}
+
+.tc-top,
+.tc-bottom {
+    background-color: #E6533C;
+    display: flex;
+    height: 12.59375rem;
+}
+
+.tcol-1,
+.tcol-2,
+.tcol-3,
+.tcol-4,
+.tcol-5,
+.tcol-6 {
+    background-size: cover;
+    background-position: center;
+}
+
+.tcol-1 {
+    width: 19.625rem;
+    background-image: linear-gradient(rgb(6, 255, 210, 0.422) 0%,
+            rgba(6, 255, 210, 0.522) 36%),
+        url(../resource/images/exercise1.jpg);
+}
+
+.tcol-1,
+.tcol-2,
+.tcol-3,
+p {
+    font-size: 1rem;
+}
+
+.tcol-1 p {
+    margin: 54% 5%;
+    color: black;
+}
+
+.tcol-2 {
+    width: 36.5rem;
+    background-image: linear-gradient(rgb(255, 0, 0, 0.3) 0%,
+            rgba(255, 0, 0, 0.3) 36%), url(../resource/images/exercise2.png);
+}
+
+.tcol-2 p {
+    margin: 4% 5%;
+}
+
+.tcol-3 {
+    width: 22.125rem;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5) 0%,
+            rgba(0, 0, 0, 0.4) 36%), url(../resource/images/exercise3.png);
+}
+
+.tcol-3 p {
+    margin: 43% 5%;
+}
+
+.tcol-4 {
+    width: 30.5625rem;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.522) 0%,
+            rgba(0, 0, 0, 0.522) 36%),
+        url(../resource/images/exercise4.png);
+}
+
+.tcol-4 p {
+    float: right;
+    margin: 3% 4%;
+}
+
+.tcol-5 {
+    width: 22rem;
+    background-image: linear-gradient(rgba(66, 255, 0, 0.3) 0%,
+            rgba(66, 255, 0, 0.3) 36%),
+        url(../resource/images/exercise5.jpg);
+}
+
+.tcol-5 p {
+    position: relative;
+    top: 21vh;
+    left: 2vw;
+}
+
+.tcol-6 {
+    width: 25.6875rem;
+    background-image: linear-gradient(rgba(0, 71, 255, 0.3) 0%,
+            rgba(0, 71, 255, 0.3) 36%),
+        url(../resource/images/exercise6.jpg);
+}
+
+.tcol-6 p {
+    position: relative;
+    top: 21vh;
+    left: 2vw;
+}
+
+/* ====== training area end ====== */
+
+/*  ======bmi area start ====== */
+.bmi {
+    margin-top: 5.625rem;
+}
+
+.bmi-heading,
+.bmi-calculator {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.bmi-heading h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-left: 23.734375rem;
+}
+
+.bmi-heading p {
+    margin-left: 23.734375rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+}
+
+.bmi-calculator-bg {
+    background-color: #222222;
+    height: 30.4375rem;
+}
+
+.bmi-calculator {
+    display: flex;
+    margin-top: 5.5rem;
+}
+
+.bmi-chart,
+.bmi-input {
+    width: 50%;
+    margin-top: 8vh;
+}
+
+.bmi-chart h2 {
+    font-size: 1.75rem;
+    font-weight: 900;
+}
+
+.table-container {
+    margin-top: 3.25rem;
+}
+
+table,
+th,
+td {
+    border: 0.03rem solid rgba(255, 255, 255, 0.16);
+    border-collapse: collapse;
+    text-align: center;
+    width: 19rem;
+    height: 1.6rem;
+    font-size: 0.76rem;
+}
+
+.bmi-iheading h1 {
+    font-size: 1.75rem;
+    font-weight: 900;
+}
+
+.bmi-iheading p {
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.bmi-form {
+    margin-top: 2.125rem;
+}
+
+.bmi-form input {
+    width: 17.65625rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding-left: 1vw;
+    background-color: #383838;
+}
+
+.bmi-form ::placeholder {
+    font-size: 0.875rem;
+    color: rgb(255, 255, 255, 0.5);
+}
+
+select,
+#sm {
+    width: 17.65625rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding-left: 1vw;
+    background-color: #383838;
+    font-size: 0.875rem;
+    color: rgb(255, 255, 255, 0.5);
+}
+
+select,
+#lg {
+    width: 36.6rem;
+}
+
+.bfl-top,
+.bf-top,
+#right,
+#lg {
+    position: relative;
+}
+
+.bfl-top {
+    top: 1rem;
+}
+
+.bf-top {
+    left: 1rem;
+    top: 1rem;
+}
+
+#right {
+    left: 1rem;
+}
+
+#lg {
+    top: 2rem;
+}
+
+.bmi-btn {
+    background-color: #E6533C;
+    margin-top: 12vh;
+    width: 14rem;
+    height: 3.375rem;
+    border-radius: 3rem;
+    text-align: center;
+}
+
+.bmi-btn p {
+    font-size: 1.4rem;
+    line-height: 2.4;
+}
+
+/*  ======bmi area end ====== */
+
+/* ====== team area start ====== */
+.team {
+    width: 80%;
+    margin: 5vh auto;
+}
+
+.team-members {
+    background-color: rgba(255, 255, 255, 0.14);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.65rem;
+    margin-top: 3.625rem;
+}
+
+.team-heading h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.team-heading p {
+    font-size: 0.875rem;
+    text-align: center;
+    color: rgb(255, 255, 255, 0.5);
+    margin-top: 1rem;
+}
+
+.tm-1,
+.tm-2,
+.tm-3,
+.tm-4,
+.tm-5,
+.tm-6,
+img {
+    width: auto;
+    height: 17rem;
+    border-radius: 0.6rem;
+    background-size: cover;
+}
+
+.tm-1,
+.tm-2,
+.tm-3,
+.tm-4,
+.tm-5,
+.tm-6,
+h4 {
+    font-size: 1.25rem;
+    font-weight: 900;
+    position: relative;
+}
+
+.tm-1,
+.tm-2,
+.tm-3,
+.tm-4,
+.tm-5,
+.tm-6,
+p {
+    font-size: 0.65rem;
+    position: relative;
+}
+
+.tm-1 h4 {
+    top: 30vh;
+    left: 0.8vw;
+}
+
+.tm-1 p {
+    top: 30vh;
+    left: 0.8vw;
+    color: rgb(255, 255, 255, 0.6);
+}
+
+.tm-2 h4 {
+    top: 30vh;
+    left: 0.8vw;
+}
+
+.tm-2 p {
+    top: 30vh;
+    left: 0.8vw;
+    color: rgb(255, 255, 255, 0.6);
+}
+
+.tm-3 h4 {
+    top: 30vh;
+    left: 0.8vw;
+}
+
+.tm-3 p {
+    top: 30vh;
+    left: 0.8vw;
+    color: rgb(255, 255, 255, 0.6);
+}
+
+.tm-4 h4 {
+    top: 30vh;
+    left: 0.8vw;
+}
+
+.tm-4 p {
+    top: 30vh;
+    left: 0.8vw;
+    color: rgb(255, 255, 255, 0.6);
+}
+
+.tm-5 h4 {
+    top: 30vh;
+    left: 0.8vw;
+}
+
+.tm-5 p {
+    top: 30vh;
+    left: 0.8vw;
+    color: rgb(255, 255, 255, 0.6);
+}
+
+.tm-6 h4 {
+    top: 30vh;
+    left: 0.8vw;
+}
+
+.tm-6 p {
+    top: 30vh;
+    left: 0.8vw;
+    color: rgb(255, 255, 255, 0.6);
+}
+
+.tm-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%,
+            rgba(0, 0, 0, 0.54) 36%),
+        url(../resource/images/trainer1.png);
+}
+
+.tm-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%,
+            rgba(0, 0, 0, 0.54) 36%),
+        url(../resource/images/trainer2.png);
+}
+
+.tm-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%,
+            rgba(0, 0, 0, 0.54) 36%),
+        url(../resource/images/trainer3.png);
+}
+
+.tm-4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%,
+            rgba(0, 0, 0, 0.54) 36%),
+        url(../resource/images/trainer4.png);
+}
+
+.tm-5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%,
+            rgba(0, 0, 0, 0.54) 36%),
+        url(../resource/images/trainer5.png);
+}
+
+.tm-6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%,
+            rgba(0, 0, 0, 0.54) 36%),
+        url(../resource/images/trainer6.png);
+}
+
+/* ====== team area end ====== */
+
+/* ====== footrt area start ====== */
+footer {
+    margin-top: 5.6rem;
+    background-color: #1a1a1a;
+}
+
+.footer-top {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 9vh;
+}
+
+.ontablet {
+    display: flex;
+    width: 37rem;
+}
+
+.ft-left h1 {
+    font-size: 4.375rem;
+    font-weight: 900;
+    font-style: italic;
+    color: #E6533C;
+}
+
+.ft-left p {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.ft-center,
+.ft-right {
+    margin-top: 5vh;
+}
+
+.ft-center,
+.ft-right,
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    width: 50%;
+    text-wrap: nowrap;
+}
+
+.ft-link {
+    position: relative;
+    top: 2.4375rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ft-link p {
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-bottom {
+    height: 6vh;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 1.24rem;
+    margin-top: 4vh;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ====== footrt area end ====== */
